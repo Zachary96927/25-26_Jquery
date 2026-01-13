@@ -7,7 +7,7 @@
     <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
     <script>
         $(document).ready(function (){
-            $("#Clean").click(function (){
+            $("#Dirty").click(function (){
                 $("#Dpig").animate({
                     left:'+=600px',
                     opacity:'+=1'
@@ -17,10 +17,10 @@
                     opacity:'-=1'
                 });
                 $("#Clean").animate({
-                    opacity:'-=1'
+                    opacity:'+=1'
                 });
                 $("#Dirty").animate({
-                    opacity:'+=1'
+                    opacity:'-=1'
                 });
 
 
@@ -28,7 +28,7 @@
 
         });
         $(document).ready(function () {
-            $("#Dirty").click(function () {
+            $("#Clean").click(function () {
                 $("#Cpig").animate({
                     left:'-=600px',
                     opacity:'+=1'
@@ -38,10 +38,10 @@
                     opacity:'-=1'
                 });
                 $("#Dirty").animate({
-                    opacity:'-=1'
+                    opacity:'+=1'
                 });
                 $("#Clean").animate({
-                    opacity:'+=1'
+                    opacity:'-=1'
                 });
 
             });
@@ -50,8 +50,8 @@
     </script>
 </head>
 <body>
-<button id="Clean" style="position: absolute; left:850px; top:410px; ">Clean</button>
-<button id="Dirty" style="position: absolute; left:250px; top:410px; opacity: 0">Dirty</button>
+<button id="Dirty" style="position: absolute; left:850px; top:410px; ">Dirty</button>
+<button id="Clean" style="position: absolute; left:250px; top:410px; opacity: 0">Clean</button>
 <img id="Mud" src="img/Mud.png" style="position: absolute; left:800px; top:300px; width:200px; ">
 <img id="Puddle" src="img/Puddle.png" style="position: absolute; left:200px; top:300px; width:200px">
 <img id="Dpig" src="img/Dpig.png" style="position: absolute; left:200px; top:130px; width:200px; opacity: 0">
